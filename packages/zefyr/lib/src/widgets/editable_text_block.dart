@@ -255,7 +255,7 @@ class _NumberPoint extends StatelessWidget {
       alignment: _isLtr ? AlignmentDirectional.topEnd : AlignmentDirectional.topStart,
       child: Text(withDot ? '$index.' : '$index', style: style),
       width: width,
-      padding: EdgeInsetsDirectional.only(end: _isLtr ? padding : 0, left: _isLtr ? 0 : padding),
+      padding: EdgeInsetsDirectional.only(end: _isLtr ? padding : 0, start: _isLtr ? 0 : padding),
     );
   }
 }
