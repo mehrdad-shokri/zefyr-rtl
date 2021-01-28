@@ -6,7 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:url_launcher/url_launcher.dart';
-import 'package:zefyr/zefyr.dart';
+import 'package:zefyr_rtl/zefyr.dart';
 
 import 'forms_decorated_field.dart';
 import 'layout.dart';

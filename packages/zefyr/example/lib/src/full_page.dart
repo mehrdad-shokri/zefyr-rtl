@@ -7,7 +7,7 @@ import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
-import 'package:zefyr/zefyr.dart';
+import 'package:zefyr_rtl/zefyr.dart';
 
 class ZefyrLogo extends StatelessWidget {
   @override

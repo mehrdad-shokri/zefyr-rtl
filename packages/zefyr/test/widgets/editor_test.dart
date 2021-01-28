@@ -4,7 +4,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:quill_delta/quill_delta.dart';
-import 'package:zefyr/zefyr.dart';
+import 'package:zefyr_rtl/zefyr.dart';
 
 import '../testing.dart';
 

@@ -4,7 +4,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:notus/notus.dart';
 import 'package:url_launcher/url_launcher.dart';
-import 'package:zefyr/zefyr.dart';
+import 'package:zefyr_rtl/zefyr.dart';
 
 class TextFieldScreen extends StatefulWidget {
   TextFieldScreen({Key key, this.title}) : super(key: key);

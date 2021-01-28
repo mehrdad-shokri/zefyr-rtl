@@ -2,7 +2,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter/widgets.dart';
-import 'package:zefyr/util.dart';
+import 'package:zefyr_rtl/util.dart';
 
 import 'editor.dart';
 

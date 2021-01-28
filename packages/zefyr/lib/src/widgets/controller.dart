@@ -3,7 +3,7 @@ import 'dart:math' as math;
 import 'package:flutter/cupertino.dart';
 import 'package:notus/notus.dart';
 import 'package:quill_delta/quill_delta.dart';
-import 'package:zefyr/util.dart';
+import 'package:zefyr_rtl/util.dart';
 
 /// List of style keys which can be toggled for insertion
 List<String> _insertionToggleableStyleKeys = [

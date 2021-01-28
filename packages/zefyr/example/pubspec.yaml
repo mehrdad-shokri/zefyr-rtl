@@ -29,7 +29,7 @@ dependencies:
   google_fonts: ^1.1.0
   file: ^5.2.1
   path_provider: ^1.6.18
-  zefyr:
+  zefyr_rtl:
     path: ../
 
 dependency_overrides:

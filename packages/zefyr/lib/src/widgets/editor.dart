@@ -7,7 +7,7 @@ import 'package:flutter/scheduler.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter/widgets.dart';
 import 'package:notus/notus.dart';
-import 'package:zefyr/src/widgets/baseline_proxy.dart';
+import 'package:zefyr_rtl/src/widgets/baseline_proxy.dart';
 
 import '../rendering/editor.dart';
 import '../services/keyboard.dart';
