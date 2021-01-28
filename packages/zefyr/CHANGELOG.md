@@ -1,3 +1,7 @@
+## 1.0.0-dev.2.0-patch2
+
+* Update _isLtr method place
+
 ## 1.0.0-dev.2.0-patch1
 
 * Bug fix  

@@ -223,12 +223,6 @@ class _EditableBlock extends MultiChildRenderObjectWidget {
     renderObject.contentPadding = _contentPadding;
   }
 }
-bool get _isLtr {
-    final result = Directionality.of(context);
-    assert(result != null,
-        '$runtimeType created without a textDirection and with no ambient Directionality.');
-    return result == TextDirection.ltr;
-}
 
 class _NumberPoint extends StatelessWidget {
   final int index;
@@ -247,6 +241,14 @@ class _NumberPoint extends StatelessWidget {
     this.withDot = true,
     this.padding = 0.0,
   }) : super(key: key);
+
+  bool get _isLtr {
+    final result = Directionality.of(context);
+    assert(result != null,
+    '$runtimeType created without a textDirection and with no ambient Directionality.');
+    return result == TextDirection.ltr;
+  }
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -267,6 +269,14 @@ class _BulletPoint extends StatelessWidget {
     @required this.style,
     @required this.width,
   }) : super(key: key);
+
+  bool get _isLtr {
+    final result = Directionality.of(context);
+    assert(result != null,
+    '$runtimeType created without a textDirection and with no ambient Directionality.');
+    return result == TextDirection.ltr;
+  }
+
   @override
   Widget build(BuildContext context) {
     return Container(
