@@ -1,3 +1,7 @@
+## 1.0.0-dev.2.0-patch1
+
+* Bug fix  
+
 ## 1.0.0-dev.2.0
 
 * Fixed: Hide selection handle when the current selection is collapsed on Android (#435).
