@@ -223,6 +223,12 @@ class _EditableBlock extends MultiChildRenderObjectWidget {
     renderObject.contentPadding = _contentPadding;
   }
 }
+bool get _isLtr {
+    final result = Directionality.of(context);
+    assert(result != null,
+        '$runtimeType created without a textDirection and with no ambient Directionality.');
+    return result == TextDirection.ltr;
+}
 
 class _NumberPoint extends StatelessWidget {
   final int index;
@@ -244,10 +250,10 @@ class _NumberPoint extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      alignment: AlignmentDirectional.topEnd,
+      alignment: _isLtr ? AlignmentDirectional.topEnd : AlignmentDirectional.topStart,
       child: Text(withDot ? '$index.' : '$index', style: style),
       width: width,
-      padding: EdgeInsetsDirectional.only(end: padding),
+      padding: EdgeInsetsDirectional.only(end: _isLtr ? padding : 0, lef: isLtr ? 0 : padding),
     );
   }
 }
@@ -264,10 +270,10 @@ class _BulletPoint extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      alignment: AlignmentDirectional.topEnd,
+      alignment: _isLtr ? AlignmentDirectional.topEnd : AlignmentDirectional.topStart,
       child: Text('•', style: style),
       width: width,
-      padding: EdgeInsetsDirectional.only(end: 13.0),
+      padding: EdgeInsetsDirectional.only(end: _isLtr ? 13.0 : 0, start: _isLtr ? 0 : 13.0),
     );
   }
 }
